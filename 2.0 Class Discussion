@@ -2,7 +2,7 @@ SELECT title, AVG(rating) FROM movies WHERE genre = ‘Action’ GROUP BY title,
 
 Step 1 - Filter what you need
 
-Step 2 - Apply Group by and aggregate and Average on what comes out of filter.
+Step 2 - Apply Group by, aggregate and Average on what comes out of filter.
 
 In a traditional database system
 Now imagine that movies genre is Action, drama, fiction etc and also for all the years. Now think of the volume of data if we have to scan each time
