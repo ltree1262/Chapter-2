@@ -1,0 +1,22 @@
+SELECT title, AVG(rating) FROM movies WHERE genre = ‘Action’ GROUP BY title, rating
+
+
+
+
+df.filter("genre = 'Action'").groupBy("title", "rating").agg(df("title"), avg("rating")).show()
+
+
+Step 1 - Filter what you need
+
+Step 2 - Apply Group by and aggregate and Average on what comes out of filter.
+
+In a traditional database system
+Now imagine that movies genre is Action, drama, fiction and also for all the years. Now think of the volume of data if we have to scan each time
+someone is on movie streaming website, we have to scan each and every record, to speed up indexes may be applied.
+
+What are the solutions?
+
+Partition the data based on the kind of query runs across the storage
+Say if we have patitions based on year and say we have records for last 80 years
+Now think if we can parallely search all the 80 partitions, it will be 80 times faster 
+
