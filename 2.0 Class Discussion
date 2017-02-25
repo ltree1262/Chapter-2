@@ -11,7 +11,7 @@ Step 1 - Filter what you need
 Step 2 - Apply Group by and aggregate and Average on what comes out of filter.
 
 In a traditional database system
-Now imagine that movies genre is Action, drama, fiction and also for all the years. Now think of the volume of data if we have to scan each time
+Now imagine that movies genre is Action, drama, fiction etc and also for all the years. Now think of the volume of data if we have to scan each time
 someone is on movie streaming website, we have to scan each and every record, to speed up indexes may be applied.
 
 What are the solutions?
